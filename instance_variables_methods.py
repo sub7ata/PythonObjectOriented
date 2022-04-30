@@ -48,11 +48,10 @@ obj.city = 'Kolkata'                                        # <- Add new instanc
 obj.zipcode = 700006                                        # <- Modify instance variable
 print(obj.__dict__)
 
-
 print('Name:', getattr(obj, 'first_name'))                  # <- Use getattr instead of stud.name
 print('Email:', getattr(obj, 'email'))
 
-obj.update(713206)                                          # Modify instance variables
+obj.update(713206)                                          # <- Modify instance variables
 
 del obj.city                                                # <- Delete instance variable using del
 delattr(obj, 'last_name')                                   # <-  Delete instance variable using delattr()
@@ -60,7 +59,6 @@ print(obj.__dict__)
 
 obj.add(29)                                                 # <- call instance method
 print(obj.__dict__)
-
 
 def end(self):
     print("Good Bye {}".format(self.first_name))
